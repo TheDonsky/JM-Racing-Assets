@@ -49,7 +49,89 @@
 		},
 		"Render Category[0]": 0,
 		"Render Priority[0]": 0,
-		"Renderer Flags[0]": 7
+		"Renderer Flags[0]": 6
+	},
+	"Component[12]": {
+		"Enabled[0]": true,
+		"Name[0]": "Transform",
+		"Position[0]": [
+			1.7620941400527954,
+			1.2124887704849243,
+			-7.702357152084005e-08
+		],
+		"Rotation[0]": [
+			0.0,
+			0.0,
+			0.0
+		],
+		"Scale[0]": [
+			20.0,
+			20.0,
+			20.0
+		]
+	},
+	"Component[13]": {
+		"Cast Shadows[0]": true,
+		"ComponentFieldSublist[0]": {
+			"Boundary Offset[0]": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"Boundary Thickness[0]": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"Has Max On-Screen Size[0]": false,
+			"Min On-Screen Size[0]": 0.0,
+			"ReferenceId[0]": {
+				"Word[0]": 0,
+				"Word[1]": 0,
+				"Word[2]": 0,
+				"Word[3]": 0
+			}
+		},
+		"Enabled[0]": true,
+		"Geometry Type[0]": 0,
+		"Instanced[0]": true,
+		"Layer[0]": 0,
+		"Name[0]": "MeshRenderer",
+		"ReferenceId[0]": {
+			"Word[0]": 476662400742798519,
+			"Word[1]": -7423600116199202226,
+			"Word[2]": 9138024012008386320,
+			"Word[3]": -3018092315398694558
+		},
+		"ReferenceId[1]": {
+			"Word[0]": -5011150053154015604,
+			"Word[1]": -6574779125496551356,
+			"Word[2]": 7172365749990999124,
+			"Word[3]": -6591280096674090407
+		},
+		"Static[0]": false
+	},
+	"Component[14]": {
+		"Color[0]": [
+			1.0,
+			1.0,
+			1.0
+		],
+		"Enabled[0]": true,
+		"Intensity[0]": 1.0,
+		"Name[0]": "HDRILight",
+		"ReferenceId[0]": {
+			"Word[0]": -2285089232362018794,
+			"Word[1]": 1887678755197004542,
+			"Word[2]": 1492819644665529629,
+			"Word[3]": 5190592013006759090
+		},
+		"ReferenceId[1]": {
+			"Word[0]": 12,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		}
 	},
 	"Component[1]": {
 		"Enabled[0]": true,
@@ -71,13 +153,31 @@
 		]
 	},
 	"Component[2]": {
+		"Ambient Light Amount[0]": 0.25,
+		"Bleeding Reduction[0]": 0.125,
 		"Color[0]": [
 			1.0,
 			1.0,
 			1.0
 		],
+		"ComponentFieldSublist[0]": {
+			"ComponentFieldSublist[0]": {
+				"Blend Size[0]": 1.0,
+				"Size[0]": 16.0
+			},
+			"ComponentFieldSublist[1]": {
+				"Blend Size[0]": 2.0,
+				"Size[0]": 32.0
+			},
+			"ComponentFieldSublist[2]": {
+				"Blend Size[0]": 32.0,
+				"Size[0]": 64.0
+			},
+			"Count[0]": 3
+		},
 		"Enabled[0]": true,
-		"Intensity[0]": 1.0,
+		"Filter Size[0]": 5,
+		"Intensity[0]": 0.0,
 		"Name[0]": "DirectionalLight",
 		"ReferenceId[0]": {
 			"Word[0]": 0,
@@ -91,7 +191,9 @@
 			"Word[2]": 0,
 			"Word[3]": 0
 		},
-		"Shadow Resolution[0]": 0
+		"Shadow Range[0]": 100.0,
+		"Shadow Resolution[0]": 1024,
+		"Shadow Softness[0]": 0.5
 	},
 	"Component[3]": {
 		"Enabled[0]": true,
@@ -266,7 +368,7 @@
 		}
 	},
 	"Node[0]": {
-		"Child Count[0]": 4,
+		"Child Count[0]": 6,
 		"Node[0]": {
 			"Child Count[0]": 1,
 			"Node[0]": {
@@ -311,10 +413,22 @@
 			},
 			"Type[0]": "Jimara::Transform"
 		},
+		"Node[4]": {
+			"Child Count[0]": 1,
+			"Node[0]": {
+				"Child Count[0]": 0,
+				"Type[0]": "Jimara::MeshRenderer"
+			},
+			"Type[0]": "Jimara::Transform"
+		},
+		"Node[5]": {
+			"Child Count[0]": 0,
+			"Type[0]": "Jimara::HDRILight"
+		},
 		"Type[0]": "Jimara::Component"
 	},
 	"Resources[0]": {
-		"Count[0]": 2,
+		"Count[0]": 5,
 		"ResourceId[0]": {
 			"Word[0]": 1140326477509608018,
 			"Word[1]": -4451717979474977222,
@@ -326,6 +440,24 @@
 			"Word[1]": -5384762152189170178,
 			"Word[2]": 6628449921679381758,
 			"Word[3]": 5999040065319950253
+		},
+		"ResourceId[2]": {
+			"Word[0]": 476662400742798519,
+			"Word[1]": -7423600116199202226,
+			"Word[2]": 9138024012008386320,
+			"Word[3]": -3018092315398694558
+		},
+		"ResourceId[3]": {
+			"Word[0]": -5011150053154015604,
+			"Word[1]": -6574779125496551356,
+			"Word[2]": 7172365749990999124,
+			"Word[3]": -6591280096674090407
+		},
+		"ResourceId[4]": {
+			"Word[0]": -2285089232362018794,
+			"Word[1]": 1887678755197004542,
+			"Word[2]": 1492819644665529629,
+			"Word[3]": 5190592013006759090
 		}
 	}
 }
