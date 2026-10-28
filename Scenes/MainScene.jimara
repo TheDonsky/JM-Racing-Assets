@@ -379,10 +379,10 @@
 	},
 	"Component[23]": {
 		"Acceleration[0]": 10.0,
-		"Break Speed[0]": 10.0,
+		"Break Speed[0]": 32.0,
 		"Enabled[0]": true,
 		"Handling[0]": 10.0,
-		"Max Velocity[0]": 32.0,
+		"Max Velocity[0]": 56.0,
 		"Name[0]": "Vehicle Controller",
 		"ReferenceId[0]": {
 			"Word[0]": 26,
@@ -408,8 +408,8 @@
 			"Word[2]": 0,
 			"Word[3]": 0
 		},
-		"Reverse Acceleration[0]": 5.0,
-		"Reverse Max Velocity[0]": 16.0
+		"Reverse Acceleration[0]": 8.0,
+		"Reverse Max Velocity[0]": 32.0
 	},
 	"Component[24]": {
 		"Enabled[0]": true,
@@ -526,6 +526,84 @@
 		"Shadow Range[0]": 100.0,
 		"Shadow Resolution[0]": 1024,
 		"Shadow Softness[0]": 0.5
+	},
+	"Component[30]": {
+		"Enabled[0]": true,
+		"Name[0]": "Ramp",
+		"Position[0]": [
+			-17.93552017211914,
+			1.126432180404663,
+			11.138313293457031
+		],
+		"Rotation[0]": [
+			-12.27000617980957,
+			52.73743438720703,
+			-1.8585983525554184e-06
+		],
+		"Scale[0]": [
+			8.0,
+			2.0,
+			20.0
+		]
+	},
+	"Component[31]": {
+		"Cast Shadows[0]": true,
+		"ComponentFieldSublist[0]": {
+			"Boundary Offset[0]": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"Boundary Thickness[0]": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"Has Max On-Screen Size[0]": false,
+			"Min On-Screen Size[0]": 0.0,
+			"ReferenceId[0]": {
+				"Word[0]": 0,
+				"Word[1]": 0,
+				"Word[2]": 0,
+				"Word[3]": 0
+			}
+		},
+		"Enabled[0]": true,
+		"Geometry Type[0]": 0,
+		"Instanced[0]": true,
+		"Layer[0]": 0,
+		"Name[0]": "MeshRenderer",
+		"ReferenceId[0]": {
+			"Word[0]": 261803093624518717,
+			"Word[1]": -3096385672813244592,
+			"Word[2]": 5133521462723329183,
+			"Word[3]": -7175491678230488500
+		},
+		"ReferenceId[1]": {
+			"Word[0]": 6457349934087075929,
+			"Word[1]": 8979713237475174830,
+			"Word[2]": 4055825557025659673,
+			"Word[3]": 4397898001025078032
+		},
+		"Static[0]": false
+	},
+	"Component[32]": {
+		"Enabled[0]": true,
+		"Is Static[0]": false,
+		"Is Trigger[0]": false,
+		"Layer[0]": 0,
+		"Name[0]": "BoxCollider",
+		"ReferenceId[0]": {
+			"Word[0]": 0,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"Size[0]": [
+			1.0,
+			1.0,
+			1.0
+		]
 	},
 	"Component[3]": {
 		"Enabled[0]": true,
@@ -707,7 +785,7 @@
 		]
 	},
 	"Node[0]": {
-		"Child Count[0]": 5,
+		"Child Count[0]": 6,
 		"Node[0]": {
 			"Child Count[0]": 1,
 			"Node[0]": {
@@ -824,10 +902,22 @@
 			},
 			"Type[0]": "Jimara::Transform"
 		},
+		"Node[5]": {
+			"Child Count[0]": 2,
+			"Node[0]": {
+				"Child Count[0]": 0,
+				"Type[0]": "Jimara::MeshRenderer"
+			},
+			"Node[1]": {
+				"Child Count[0]": 0,
+				"Type[0]": "Jimara::BoxCollider"
+			},
+			"Type[0]": "Jimara::Transform"
+		},
 		"Type[0]": "Jimara::Component"
 	},
 	"Resources[0]": {
-		"Count[0]": 11,
+		"Count[0]": 12,
 		"ResourceId[0]": {
 			"Word[0]": 1140326477509608018,
 			"Word[1]": -4451717979474977222,
@@ -839,6 +929,12 @@
 			"Word[1]": -4746490559912535824,
 			"Word[2]": -4772060948918106460,
 			"Word[3]": -3817076746468283731
+		},
+		"ResourceId[11]": {
+			"Word[0]": 261803093624518717,
+			"Word[1]": -3096385672813244592,
+			"Word[2]": 5133521462723329183,
+			"Word[3]": -7175491678230488500
 		},
 		"ResourceId[1]": {
 			"Word[0]": -2903144731837458136,
