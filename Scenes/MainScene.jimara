@@ -144,7 +144,7 @@
 		"Enabled[0]": true,
 		"Geometry Type[0]": 0,
 		"Instanced[0]": true,
-		"Layer[0]": 0,
+		"Layer[0]": 1,
 		"Name[0]": "Car.001",
 		"ReferenceId[0]": {
 			"Word[0]": -3406382006628807781,
@@ -631,7 +631,7 @@
 	"Component[37]": {
 		"ComponentFieldSublist[0]": {
 			"ReferenceId[0]": {
-				"Word[0]": 0,
+				"Word[0]": 42,
 				"Word[1]": 0,
 				"Word[2]": 0,
 				"Word[3]": 0
@@ -695,7 +695,7 @@
 			"Word[3]": 0
 		},
 		"ReferenceId[1]": {
-			"Word[0]": 0,
+			"Word[0]": 41,
 			"Word[1]": 0,
 			"Word[2]": 0,
 			"Word[3]": 0
@@ -786,6 +786,94 @@
 		"Shadow Softness[0]": 0.5
 	},
 	"Component[40]": {
+		"ComponentFieldSublist[0]": {
+			"Word[0]": 18446744073709551615,
+			"Word[1]": 18446744073709551615,
+			"Word[2]": 18446744073709551615,
+			"Word[3]": 18446744073709551615
+		},
+		"Enabled[0]": true,
+		"Name[0]": "ObstacleCheck",
+		"Query Flags[0]": 26,
+		"Query Mode[0]": 1,
+		"ReferenceId[0]": {
+			"Word[0]": 0,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"ReferenceId[1]": {
+			"Word[0]": 34,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"ReferenceId[2]": {
+			"Word[0]": 44,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"ReferenceId[3]": {
+			"Word[0]": 0,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"ReferenceId[4]": {
+			"Word[0]": 0,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"Sphere Radius[0]": 0.15000000596046448
+	},
+	"Component[41]": {
+		"Enabled[0]": true,
+		"Has Value[0]": true,
+		"Name[0]": "TargetDistance",
+		"Value[0]": 8.0
+	},
+	"Component[42]": {
+		"Enabled[0]": true,
+		"InputMode[0]": 6,
+		"Name[0]": "CameraForward",
+		"No Input If Disabled[0]": 1,
+		"ReferenceId[0]": {
+			"Word[0]": 0,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		}
+	},
+	"Component[43]": {
+		"Enabled[0]": true,
+		"Name[0]": "CameraBackward",
+		"Operator[0]": 1,
+		"ReferenceId[0]": {
+			"Word[0]": 45,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"ReferenceId[1]": {
+			"Word[0]": 43,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		}
+	},
+	"Component[44]": {
+		"Enabled[0]": true,
+		"Has Value[0]": true,
+		"Name[0]": "Zero",
+		"Value[0]": [
+			0.0,
+			0.0,
+			0.0
+		]
+	},
+	"Component[45]": {
 		"Enabled[0]": true,
 		"Name[0]": "Ramp",
 		"Position[0]": [
@@ -804,7 +892,7 @@
 			20.0
 		]
 	},
-	"Component[41]": {
+	"Component[46]": {
 		"Cast Shadows[0]": true,
 		"ComponentFieldSublist[0]": {
 			"Boundary Offset[0]": [
@@ -845,7 +933,7 @@
 		},
 		"Static[0]": false
 	},
-	"Component[42]": {
+	"Component[47]": {
 		"Enabled[0]": true,
 		"Is Static[0]": false,
 		"Is Trigger[0]": false,
@@ -1119,7 +1207,7 @@
 			"Type[0]": "Jimara::Transform"
 		},
 		"Node[5]": {
-			"Child Count[0]": 4,
+			"Child Count[0]": 8,
 			"Node[0]": {
 				"Child Count[0]": 0,
 				"Type[0]": "Jimara::Camera"
@@ -1135,6 +1223,26 @@
 			"Node[3]": {
 				"Child Count[0]": 0,
 				"Type[0]": "JM_Racing::VehicleTPCInput"
+			},
+			"Node[4]": {
+				"Child Count[0]": 0,
+				"Type[0]": "Jimara::RaycastInput"
+			},
+			"Node[5]": {
+				"Child Count[0]": 0,
+				"Type[0]": "Jimara::FloatValueInput"
+			},
+			"Node[6]": {
+				"Child Count[0]": 0,
+				"Type[0]": "Jimara::TransformFieldInput"
+			},
+			"Node[7]": {
+				"Child Count[0]": 1,
+				"Node[0]": {
+					"Child Count[0]": 0,
+					"Type[0]": "Jimara::Vector3ValueInput"
+				},
+				"Type[0]": "Jimara::Vector3ArithmeticInput"
 			},
 			"Type[0]": "Jimara::Transform"
 		},
