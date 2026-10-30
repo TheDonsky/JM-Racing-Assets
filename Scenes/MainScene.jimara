@@ -104,7 +104,7 @@
 		"Enabled[0]": true,
 		"Name[0]": "Car",
 		"Position[0]": [
-			-0.0,
+			0.0,
 			0.0,
 			0.0
 		],
@@ -230,7 +230,7 @@
 			"Word[3]": 0
 		},
 		"ReferenceId[1]": {
-			"Word[0]": 36,
+			"Word[0]": 40,
 			"Word[1]": 0,
 			"Word[2]": 0,
 			"Word[3]": 0
@@ -312,7 +312,7 @@
 			"Word[3]": 0
 		},
 		"ReferenceId[1]": {
-			"Word[0]": 36,
+			"Word[0]": 40,
 			"Word[1]": 0,
 			"Word[2]": 0,
 			"Word[3]": 0
@@ -326,7 +326,7 @@
 		"Position[0]": [
 			0.949999988079071,
 			0.25,
-			-1.25
+			-1.2050000429153442
 		],
 		"Rotation[0]": [
 			0.0,
@@ -486,7 +486,7 @@
 		"Enabled[0]": true,
 		"Kinematic[0]": false,
 		"Lock[0]": 0,
-		"Mass[0]": 1.0,
+		"Mass[0]": 8.0,
 		"Name[0]": "Rigidbody",
 		"Velocity[0]": [
 			0.0,
@@ -564,13 +564,13 @@
 			"Word[3]": 0
 		},
 		"ReferenceId[1]": {
-			"Word[0]": 35,
+			"Word[0]": 37,
 			"Word[1]": 0,
 			"Word[2]": 0,
 			"Word[3]": 0
 		},
 		"ReferenceId[2]": {
-			"Word[0]": 36,
+			"Word[0]": 40,
 			"Word[1]": 0,
 			"Word[2]": 0,
 			"Word[3]": 0
@@ -589,87 +589,85 @@
 		"Name[0]": "Input"
 	},
 	"Component[33]": {
+		"Enabled[0]": true,
+		"Name[0]": "Gas",
+		"Operator[0]": 6,
+		"ReferenceId[0]": {
+			"Word[0]": 35,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"ReferenceId[1]": {
+			"Word[0]": 36,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		}
+	},
+	"Component[34]": {
 		"Axis[0]": 13,
 		"Device[0]": 0,
 		"Enabled[0]": true,
-		"Flags[0]": 3,
-		"Name[0]": "Gas"
-	},
-	"Component[34]": {
-		"Axis[0]": 12,
-		"Device[0]": 0,
-		"Enabled[0]": true,
-		"Flags[0]": 3,
-		"Name[0]": "Break"
+		"Flags[0]": 2,
+		"Name[0]": "Gas_Gamepad"
 	},
 	"Component[35]": {
-		"Axis[0]": 8,
 		"Device[0]": 0,
 		"Enabled[0]": true,
-		"Flags[0]": 3,
-		"Name[0]": "Wheel"
+		"Flags[0]": 4,
+		"Key[0]": 36,
+		"Mode[0]": 2,
+		"Name[0]": "Gas_Key"
 	},
 	"Component[36]": {
 		"Enabled[0]": true,
-		"Name[0]": "Car_CameraTarget",
-		"Position[0]": [
-			1.1910002228887606e-07,
-			0.999083399772644,
-			1.4197830736605022e-14
-		],
-		"Rotation[0]": [
-			0.0,
-			0.0,
-			0.0
-		],
-		"Scale[0]": [
-			1.0,
-			1.0,
-			1.0
-		]
+		"Name[0]": "Break",
+		"Operator[0]": 6,
+		"ReferenceId[0]": {
+			"Word[0]": 38,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"ReferenceId[1]": {
+			"Word[0]": 39,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		}
 	},
 	"Component[37]": {
+		"Axis[0]": 12,
+		"Device[0]": 0,
 		"Enabled[0]": true,
-		"InputMode[0]": 0,
-		"Name[0]": "CameraTargetPosition",
-		"No Input If Disabled[0]": 1,
-		"ReferenceId[0]": {
-			"Word[0]": 0,
-			"Word[1]": 0,
-			"Word[2]": 0,
-			"Word[3]": 0
-		}
+		"Flags[0]": 2,
+		"Name[0]": "Break_Gamepad"
 	},
 	"Component[38]": {
+		"Device[0]": 0,
 		"Enabled[0]": true,
-		"InputMode[0]": 0,
-		"Name[0]": "Car_Velocity",
-		"No Input If Disabled[0]": 3,
-		"ReferenceId[0]": {
-			"Word[0]": 29,
-			"Word[1]": 0,
-			"Word[2]": 0,
-			"Word[3]": 0
-		}
+		"Flags[0]": 4,
+		"Key[0]": 32,
+		"Mode[0]": 2,
+		"Name[0]": "Break_Key"
 	},
 	"Component[39]": {
 		"Enabled[0]": true,
-		"Name[0]": "CameraBoom",
-		"Position[0]": [
-			0.0,
-			2.26200008392334,
-			-4.555302619934082
-		],
-		"Rotation[0]": [
-			16.0,
-			0.0,
-			0.0
-		],
-		"Scale[0]": [
-			1.0,
-			1.0,
-			1.0
-		]
+		"Name[0]": "Wheel",
+		"Operator[0]": 0,
+		"ReferenceId[0]": {
+			"Word[0]": 41,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"ReferenceId[1]": {
+			"Word[0]": 42,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		}
 	},
 	"Component[3]": {
 		"Ambient Light Amount[0]": 0.25,
@@ -715,6 +713,108 @@
 		"Shadow Softness[0]": 0.5
 	},
 	"Component[40]": {
+		"Axis[0]": 8,
+		"Device[0]": 0,
+		"Enabled[0]": true,
+		"Flags[0]": 2,
+		"Name[0]": "Wheel_Gamepad"
+	},
+	"Component[41]": {
+		"Enabled[0]": true,
+		"Name[0]": "Wheel_Keys",
+		"Operator[0]": 1,
+		"ReferenceId[0]": {
+			"Word[0]": 44,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"ReferenceId[1]": {
+			"Word[0]": 43,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		}
+	},
+	"Component[42]": {
+		"Device[0]": 0,
+		"Enabled[0]": true,
+		"Flags[0]": 4,
+		"Key[0]": 14,
+		"Mode[0]": 2,
+		"Name[0]": "Wheel_LeftKey"
+	},
+	"Component[43]": {
+		"Device[0]": 0,
+		"Enabled[0]": true,
+		"Flags[0]": 4,
+		"Key[0]": 17,
+		"Mode[0]": 2,
+		"Name[0]": "Wheel_RightKey"
+	},
+	"Component[44]": {
+		"Enabled[0]": true,
+		"Name[0]": "Car_CameraTarget",
+		"Position[0]": [
+			1.1910002228887606e-07,
+			0.999083399772644,
+			1.4197830736605022e-14
+		],
+		"Rotation[0]": [
+			0.0,
+			0.0,
+			0.0
+		],
+		"Scale[0]": [
+			1.0,
+			1.0,
+			1.0
+		]
+	},
+	"Component[45]": {
+		"Enabled[0]": true,
+		"InputMode[0]": 0,
+		"Name[0]": "CameraTargetPosition",
+		"No Input If Disabled[0]": 1,
+		"ReferenceId[0]": {
+			"Word[0]": 0,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		}
+	},
+	"Component[46]": {
+		"Enabled[0]": true,
+		"InputMode[0]": 0,
+		"Name[0]": "Car_Velocity",
+		"No Input If Disabled[0]": 3,
+		"ReferenceId[0]": {
+			"Word[0]": 29,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		}
+	},
+	"Component[47]": {
+		"Enabled[0]": true,
+		"Name[0]": "CameraBoom",
+		"Position[0]": [
+			0.0,
+			2.26200008392334,
+			-4.555302619934082
+		],
+		"Rotation[0]": [
+			16.0,
+			0.0,
+			0.0
+		],
+		"Scale[0]": [
+			1.0,
+			1.0,
+			1.0
+		]
+	},
+	"Component[48]": {
 		"Clear color[0]": [
 			0.0,
 			0.1521655023097992,
@@ -743,10 +843,10 @@
 		"Render Priority[0]": 0,
 		"Renderer Flags[0]": 6
 	},
-	"Component[41]": {
+	"Component[49]": {
 		"ComponentFieldSublist[0]": {
 			"ReferenceId[0]": {
-				"Word[0]": 49,
+				"Word[0]": 61,
 				"Word[1]": 0,
 				"Word[2]": 0,
 				"Word[3]": 0
@@ -804,154 +904,25 @@
 		"Enabled[0]": true,
 		"Name[0]": "Third Person Camera",
 		"ReferenceId[0]": {
-			"Word[0]": 38,
-			"Word[1]": 0,
-			"Word[2]": 0,
-			"Word[3]": 0
-		},
-		"ReferenceId[1]": {
-			"Word[0]": 48,
-			"Word[1]": 0,
-			"Word[2]": 0,
-			"Word[3]": 0
-		},
-		"ReferenceId[2]": {
-			"Word[0]": 0,
-			"Word[1]": 0,
-			"Word[2]": 0,
-			"Word[3]": 0
-		},
-		"ReferenceId[3]": {
-			"Word[0]": 43,
-			"Word[1]": 0,
-			"Word[2]": 0,
-			"Word[3]": 0
-		}
-	},
-	"Component[42]": {
-		"Enabled[0]": true,
-		"Max Velocity[0]": 8.0,
-		"Min Velocity[0]": 1.0,
-		"Name[0]": "Vehicle TPC Input",
-		"Override Blend Duration[0]": 1.0,
-		"Override Duration[0]": 1.0,
-		"ReferenceId[0]": {
-			"Word[0]": 39,
-			"Word[1]": 0,
-			"Word[2]": 0,
-			"Word[3]": 0
-		},
-		"ReferenceId[1]": {
-			"Word[0]": 47,
-			"Word[1]": 0,
-			"Word[2]": 0,
-			"Word[3]": 0
-		},
-		"ReferenceId[2]": {
-			"Word[0]": 44,
-			"Word[1]": 0,
-			"Word[2]": 0,
-			"Word[3]": 0
-		},
-		"Yaw Change Speed[0]": 0.25
-	},
-	"Component[43]": {
-		"Enabled[0]": true,
-		"Name[0]": "Rotation Override",
-		"Operator[0]": 2,
-		"ReferenceId[0]": {
-			"Word[0]": 45,
-			"Word[1]": 0,
-			"Word[2]": 0,
-			"Word[3]": 0
-		},
-		"ReferenceId[1]": {
 			"Word[0]": 46,
 			"Word[1]": 0,
 			"Word[2]": 0,
 			"Word[3]": 0
-		}
-	},
-	"Component[44]": {
-		"Device[0]": 0,
-		"Enabled[0]": true,
-		"Flags[0]": 6,
-		"Horizontal[0]": 10,
-		"Max magnitude[0]": null,
-		"Name[0]": "Analog Input",
-		"Vertical[0]": 11
-	},
-	"Component[45]": {
-		"Enabled[0]": true,
-		"Has Value[0]": true,
-		"Name[0]": "Vector2(1, -1)",
-		"Value[0]": [
-			1.0,
-			-1.0
-		]
-	},
-	"Component[46]": {
-		"Enabled[0]": true,
-		"Has Value[0]": true,
-		"Name[0]": "Default Yaw",
-		"Value[0]": 15.0
-	},
-	"Component[47]": {
-		"ComponentFieldSublist[0]": {
-			"Word[0]": 18446744073709551615,
-			"Word[1]": 18446744073709551615,
-			"Word[2]": 18446744073709551615,
-			"Word[3]": 18446744073709551615
-		},
-		"Enabled[0]": true,
-		"Name[0]": "ObstacleCheck",
-		"Query Flags[0]": 26,
-		"Query Mode[0]": 1,
-		"ReferenceId[0]": {
-			"Word[0]": 0,
-			"Word[1]": 0,
-			"Word[2]": 0,
-			"Word[3]": 0
 		},
 		"ReferenceId[1]": {
-			"Word[0]": 38,
+			"Word[0]": 60,
 			"Word[1]": 0,
 			"Word[2]": 0,
 			"Word[3]": 0
 		},
 		"ReferenceId[2]": {
-			"Word[0]": 51,
+			"Word[0]": 0,
 			"Word[1]": 0,
 			"Word[2]": 0,
 			"Word[3]": 0
 		},
 		"ReferenceId[3]": {
-			"Word[0]": 0,
-			"Word[1]": 0,
-			"Word[2]": 0,
-			"Word[3]": 0
-		},
-		"ReferenceId[4]": {
-			"Word[0]": 0,
-			"Word[1]": 0,
-			"Word[2]": 0,
-			"Word[3]": 0
-		},
-		"Sphere Radius[0]": 0.15000000596046448
-	},
-	"Component[48]": {
-		"Enabled[0]": true,
-		"Has Value[0]": true,
-		"Name[0]": "TargetDistance",
-		"Value[0]": 8.0
-	},
-	"Component[49]": {
-		"Enabled[0]": true,
-		"InputMode[0]": 6,
-		"Name[0]": "CameraForward",
-		"No Input If Disabled[0]": 1,
-		"ReferenceId[0]": {
-			"Word[0]": 0,
+			"Word[0]": 51,
 			"Word[1]": 0,
 			"Word[2]": 0,
 			"Word[3]": 0
@@ -973,7 +944,7 @@
 			"Word[3]": 5190592013006759090
 		},
 		"ReferenceId[1]": {
-			"Word[0]": 41,
+			"Word[0]": 49,
 			"Word[1]": 0,
 			"Word[2]": 0,
 			"Word[3]": 0
@@ -981,22 +952,208 @@
 	},
 	"Component[50]": {
 		"Enabled[0]": true,
-		"Name[0]": "CameraBackward",
-		"Operator[0]": 1,
+		"Max Velocity[0]": 8.0,
+		"Min Velocity[0]": 1.0,
+		"Name[0]": "Vehicle TPC Input",
+		"Override Blend Duration[0]": 1.0,
+		"Override Duration[0]": 1.0,
 		"ReferenceId[0]": {
-			"Word[0]": 52,
+			"Word[0]": 47,
 			"Word[1]": 0,
 			"Word[2]": 0,
 			"Word[3]": 0
 		},
 		"ReferenceId[1]": {
-			"Word[0]": 50,
+			"Word[0]": 59,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"ReferenceId[2]": {
+			"Word[0]": 52,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"Yaw Change Speed[0]": 0.25
+	},
+	"Component[51]": {
+		"Enabled[0]": true,
+		"Name[0]": "Rotation Override",
+		"Operator[0]": 0,
+		"ReferenceId[0]": {
+			"Word[0]": 53,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"ReferenceId[1]": {
+			"Word[0]": 58,
 			"Word[1]": 0,
 			"Word[2]": 0,
 			"Word[3]": 0
 		}
 	},
-	"Component[51]": {
+	"Component[52]": {
+		"Enabled[0]": true,
+		"Name[0]": "CameraInput_Analog",
+		"Operator[0]": 0,
+		"ReferenceId[0]": {
+			"Word[0]": 54,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"ReferenceId[1]": {
+			"Word[0]": 57,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		}
+	},
+	"Component[53]": {
+		"Enabled[0]": true,
+		"Name[0]": "CameraInput_Controller",
+		"Operator[0]": 2,
+		"ReferenceId[0]": {
+			"Word[0]": 55,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"ReferenceId[1]": {
+			"Word[0]": 56,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		}
+	},
+	"Component[54]": {
+		"Device[0]": 0,
+		"Enabled[0]": true,
+		"Flags[0]": 4,
+		"Horizontal[0]": 10,
+		"Max magnitude[0]": null,
+		"Name[0]": "CameraInput_ControllerAxis",
+		"Vertical[0]": 11
+	},
+	"Component[55]": {
+		"Enabled[0]": true,
+		"Has Value[0]": true,
+		"Name[0]": "Vector2(1, -1)",
+		"Value[0]": [
+			1.0,
+			-1.0
+		]
+	},
+	"Component[56]": {
+		"Device[0]": 0,
+		"Enabled[0]": true,
+		"Flags[0]": 4,
+		"Horizontal[0]": 1,
+		"Max magnitude[0]": null,
+		"Name[0]": "CameraInput_Mouse",
+		"Vertical[0]": 2
+	},
+	"Component[57]": {
+		"Device[0]": 0,
+		"Down[0]": 64,
+		"Enabled[0]": true,
+		"Flags[0]": 4,
+		"Left[0]": 66,
+		"Name[0]": "CameraInput_Buttons",
+		"Right[0]": 67,
+		"Up[0]": 65
+	},
+	"Component[58]": {
+		"Enabled[0]": true,
+		"Has Value[0]": true,
+		"Name[0]": "Default Pitch",
+		"Value[0]": 15.0
+	},
+	"Component[59]": {
+		"ComponentFieldSublist[0]": {
+			"Word[0]": 18446744073709551615,
+			"Word[1]": 18446744073709551615,
+			"Word[2]": 18446744073709551615,
+			"Word[3]": 18446744073709551615
+		},
+		"Enabled[0]": true,
+		"Name[0]": "ObstacleCheck",
+		"Query Flags[0]": 26,
+		"Query Mode[0]": 1,
+		"ReferenceId[0]": {
+			"Word[0]": 0,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"ReferenceId[1]": {
+			"Word[0]": 46,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"ReferenceId[2]": {
+			"Word[0]": 63,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"ReferenceId[3]": {
+			"Word[0]": 0,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"ReferenceId[4]": {
+			"Word[0]": 0,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"Sphere Radius[0]": 0.15000000596046448
+	},
+	"Component[5]": {
+		"Enabled[0]": true,
+		"Name[0]": "PostFX"
+	},
+	"Component[60]": {
+		"Enabled[0]": true,
+		"Has Value[0]": true,
+		"Name[0]": "TargetDistance",
+		"Value[0]": 8.0
+	},
+	"Component[61]": {
+		"Enabled[0]": true,
+		"InputMode[0]": 6,
+		"Name[0]": "CameraForward",
+		"No Input If Disabled[0]": 1,
+		"ReferenceId[0]": {
+			"Word[0]": 0,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		}
+	},
+	"Component[62]": {
+		"Enabled[0]": true,
+		"Name[0]": "CameraBackward",
+		"Operator[0]": 1,
+		"ReferenceId[0]": {
+			"Word[0]": 64,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"ReferenceId[1]": {
+			"Word[0]": 62,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		}
+	},
+	"Component[63]": {
 		"Enabled[0]": true,
 		"Has Value[0]": true,
 		"Name[0]": "Zero",
@@ -1006,7 +1163,7 @@
 			0.0
 		]
 	},
-	"Component[52]": {
+	"Component[64]": {
 		"Enabled[0]": true,
 		"Name[0]": "Ramp",
 		"Position[0]": [
@@ -1025,7 +1182,7 @@
 			20.0
 		]
 	},
-	"Component[53]": {
+	"Component[65]": {
 		"Cast Shadows[0]": true,
 		"ComponentFieldSublist[0]": {
 			"Boundary Offset[0]": [
@@ -1066,7 +1223,7 @@
 		},
 		"Static[0]": false
 	},
-	"Component[54]": {
+	"Component[66]": {
 		"Enabled[0]": true,
 		"Is Static[0]": false,
 		"Is Trigger[0]": false,
@@ -1083,10 +1240,6 @@
 			1.0,
 			1.0
 		]
-	},
-	"Component[5]": {
-		"Enabled[0]": true,
-		"Name[0]": "PostFX"
 	},
 	"Component[6]": {
 		"Bloom Background[0]": true,
@@ -1306,16 +1459,48 @@
 			"Node[7]": {
 				"Child Count[0]": 3,
 				"Node[0]": {
-					"Child Count[0]": 0,
-					"Type[0]": "Jimara::OS::AxisInput"
+					"Child Count[0]": 2,
+					"Node[0]": {
+						"Child Count[0]": 0,
+						"Type[0]": "Jimara::OS::AxisInput"
+					},
+					"Node[1]": {
+						"Child Count[0]": 0,
+						"Type[0]": "Jimara::OS::KeyCodeInput"
+					},
+					"Type[0]": "Jimara::FloatArithmeticInput"
 				},
 				"Node[1]": {
-					"Child Count[0]": 0,
-					"Type[0]": "Jimara::OS::AxisInput"
+					"Child Count[0]": 2,
+					"Node[0]": {
+						"Child Count[0]": 0,
+						"Type[0]": "Jimara::OS::AxisInput"
+					},
+					"Node[1]": {
+						"Child Count[0]": 0,
+						"Type[0]": "Jimara::OS::KeyCodeInput"
+					},
+					"Type[0]": "Jimara::FloatArithmeticInput"
 				},
 				"Node[2]": {
-					"Child Count[0]": 0,
-					"Type[0]": "Jimara::OS::AxisInput"
+					"Child Count[0]": 2,
+					"Node[0]": {
+						"Child Count[0]": 0,
+						"Type[0]": "Jimara::OS::AxisInput"
+					},
+					"Node[1]": {
+						"Child Count[0]": 2,
+						"Node[0]": {
+							"Child Count[0]": 0,
+							"Type[0]": "Jimara::OS::KeyCodeInput"
+						},
+						"Node[1]": {
+							"Child Count[0]": 0,
+							"Type[0]": "Jimara::OS::KeyCodeInput"
+						},
+						"Type[0]": "Jimara::FloatArithmeticInput"
+					},
+					"Type[0]": "Jimara::FloatArithmeticInput"
 				},
 				"Type[0]": "Jimara::Component"
 			},
@@ -1350,12 +1535,28 @@
 			"Node[3]": {
 				"Child Count[0]": 2,
 				"Node[0]": {
-					"Child Count[0]": 0,
-					"Type[0]": "Jimara::OS::DoubleAxisInput"
+					"Child Count[0]": 2,
+					"Node[0]": {
+						"Child Count[0]": 2,
+						"Node[0]": {
+							"Child Count[0]": 0,
+							"Type[0]": "Jimara::OS::DoubleAxisInput"
+						},
+						"Node[1]": {
+							"Child Count[0]": 0,
+							"Type[0]": "Jimara::Vector2ValueInput"
+						},
+						"Type[0]": "Jimara::Vector2ArithmeticInput"
+					},
+					"Node[1]": {
+						"Child Count[0]": 0,
+						"Type[0]": "Jimara::OS::DoubleAxisInput"
+					},
+					"Type[0]": "Jimara::Vector2ArithmeticInput"
 				},
 				"Node[1]": {
 					"Child Count[0]": 0,
-					"Type[0]": "Jimara::Vector2ValueInput"
+					"Type[0]": "Jimara::OS::FourKeyInput"
 				},
 				"Type[0]": "Jimara::Vector2ArithmeticInput"
 			},
