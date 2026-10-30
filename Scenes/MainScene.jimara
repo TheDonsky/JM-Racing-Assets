@@ -631,7 +631,7 @@
 	"Component[37]": {
 		"ComponentFieldSublist[0]": {
 			"ReferenceId[0]": {
-				"Word[0]": 42,
+				"Word[0]": 45,
 				"Word[1]": 0,
 				"Word[2]": 0,
 				"Word[3]": 0
@@ -659,7 +659,7 @@
 		"ComponentFieldSublist[3]": {
 			"Base Value[0]": [
 				180.0,
-				-60.0
+				60.0
 			],
 			"ReferenceId[0]": {
 				"Word[0]": 0,
@@ -695,7 +695,7 @@
 			"Word[3]": 0
 		},
 		"ReferenceId[1]": {
-			"Word[0]": 41,
+			"Word[0]": 44,
 			"Word[1]": 0,
 			"Word[2]": 0,
 			"Word[3]": 0
@@ -707,22 +707,13 @@
 			"Word[3]": 0
 		},
 		"ReferenceId[3]": {
-			"Word[0]": 40,
+			"Word[0]": 39,
 			"Word[1]": 0,
 			"Word[2]": 0,
 			"Word[3]": 0
 		}
 	},
 	"Component[38]": {
-		"Device[0]": 0,
-		"Enabled[0]": true,
-		"Flags[0]": 6,
-		"Horizontal[0]": 10,
-		"Max magnitude[0]": null,
-		"Name[0]": "Camera Rotation Input",
-		"Vertical[0]": 11
-	},
-	"Component[39]": {
 		"Enabled[0]": true,
 		"Max Velocity[0]": 8.0,
 		"Min Velocity[0]": 1.0,
@@ -736,7 +727,31 @@
 			"Word[3]": 0
 		},
 		"ReferenceId[1]": {
-			"Word[0]": 39,
+			"Word[0]": 43,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"ReferenceId[2]": {
+			"Word[0]": 40,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"Yaw Change Speed[0]": 0.25
+	},
+	"Component[39]": {
+		"Enabled[0]": true,
+		"Name[0]": "Rotation Override",
+		"Operator[0]": 2,
+		"ReferenceId[0]": {
+			"Word[0]": 41,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"ReferenceId[1]": {
+			"Word[0]": 42,
 			"Word[1]": 0,
 			"Word[2]": 0,
 			"Word[3]": 0
@@ -786,6 +801,30 @@
 		"Shadow Softness[0]": 0.5
 	},
 	"Component[40]": {
+		"Device[0]": 0,
+		"Enabled[0]": true,
+		"Flags[0]": 6,
+		"Horizontal[0]": 10,
+		"Max magnitude[0]": null,
+		"Name[0]": "Analog Input",
+		"Vertical[0]": 11
+	},
+	"Component[41]": {
+		"Enabled[0]": true,
+		"Has Value[0]": true,
+		"Name[0]": "Vector2(1, -1)",
+		"Value[0]": [
+			1.0,
+			-1.0
+		]
+	},
+	"Component[42]": {
+		"Enabled[0]": true,
+		"Has Value[0]": true,
+		"Name[0]": "Default Yaw",
+		"Value[0]": 15.0
+	},
+	"Component[43]": {
 		"ComponentFieldSublist[0]": {
 			"Word[0]": 18446744073709551615,
 			"Word[1]": 18446744073709551615,
@@ -809,7 +848,7 @@
 			"Word[3]": 0
 		},
 		"ReferenceId[2]": {
-			"Word[0]": 44,
+			"Word[0]": 47,
 			"Word[1]": 0,
 			"Word[2]": 0,
 			"Word[3]": 0
@@ -828,13 +867,13 @@
 		},
 		"Sphere Radius[0]": 0.15000000596046448
 	},
-	"Component[41]": {
+	"Component[44]": {
 		"Enabled[0]": true,
 		"Has Value[0]": true,
 		"Name[0]": "TargetDistance",
 		"Value[0]": 8.0
 	},
-	"Component[42]": {
+	"Component[45]": {
 		"Enabled[0]": true,
 		"InputMode[0]": 6,
 		"Name[0]": "CameraForward",
@@ -846,24 +885,24 @@
 			"Word[3]": 0
 		}
 	},
-	"Component[43]": {
+	"Component[46]": {
 		"Enabled[0]": true,
 		"Name[0]": "CameraBackward",
 		"Operator[0]": 1,
 		"ReferenceId[0]": {
-			"Word[0]": 45,
+			"Word[0]": 48,
 			"Word[1]": 0,
 			"Word[2]": 0,
 			"Word[3]": 0
 		},
 		"ReferenceId[1]": {
-			"Word[0]": 43,
+			"Word[0]": 46,
 			"Word[1]": 0,
 			"Word[2]": 0,
 			"Word[3]": 0
 		}
 	},
-	"Component[44]": {
+	"Component[47]": {
 		"Enabled[0]": true,
 		"Has Value[0]": true,
 		"Name[0]": "Zero",
@@ -873,7 +912,7 @@
 			0.0
 		]
 	},
-	"Component[45]": {
+	"Component[48]": {
 		"Enabled[0]": true,
 		"Name[0]": "Ramp",
 		"Position[0]": [
@@ -892,7 +931,7 @@
 			20.0
 		]
 	},
-	"Component[46]": {
+	"Component[49]": {
 		"Cast Shadows[0]": true,
 		"ComponentFieldSublist[0]": {
 			"Boundary Offset[0]": [
@@ -933,24 +972,6 @@
 		},
 		"Static[0]": false
 	},
-	"Component[47]": {
-		"Enabled[0]": true,
-		"Is Static[0]": false,
-		"Is Trigger[0]": false,
-		"Layer[0]": 0,
-		"Name[0]": "BoxCollider",
-		"ReferenceId[0]": {
-			"Word[0]": 0,
-			"Word[1]": 0,
-			"Word[2]": 0,
-			"Word[3]": 0
-		},
-		"Size[0]": [
-			1.0,
-			1.0,
-			1.0
-		]
-	},
 	"Component[4]": {
 		"Color[0]": [
 			1.0,
@@ -972,6 +993,24 @@
 			"Word[2]": 0,
 			"Word[3]": 0
 		}
+	},
+	"Component[50]": {
+		"Enabled[0]": true,
+		"Is Static[0]": false,
+		"Is Trigger[0]": false,
+		"Layer[0]": 0,
+		"Name[0]": "BoxCollider",
+		"ReferenceId[0]": {
+			"Word[0]": 0,
+			"Word[1]": 0,
+			"Word[2]": 0,
+			"Word[3]": 0
+		},
+		"Size[0]": [
+			1.0,
+			1.0,
+			1.0
+		]
 	},
 	"Component[5]": {
 		"Enabled[0]": true,
@@ -1207,7 +1246,7 @@
 			"Type[0]": "Jimara::Transform"
 		},
 		"Node[5]": {
-			"Child Count[0]": 8,
+			"Child Count[0]": 9,
 			"Node[0]": {
 				"Child Count[0]": 0,
 				"Type[0]": "Jimara::Camera"
@@ -1218,25 +1257,37 @@
 			},
 			"Node[2]": {
 				"Child Count[0]": 0,
-				"Type[0]": "Jimara::OS::DoubleAxisInput"
+				"Type[0]": "JM_Racing::VehicleTPCInput"
 			},
 			"Node[3]": {
-				"Child Count[0]": 0,
-				"Type[0]": "JM_Racing::VehicleTPCInput"
+				"Child Count[0]": 2,
+				"Node[0]": {
+					"Child Count[0]": 0,
+					"Type[0]": "Jimara::OS::DoubleAxisInput"
+				},
+				"Node[1]": {
+					"Child Count[0]": 0,
+					"Type[0]": "Jimara::Vector2ValueInput"
+				},
+				"Type[0]": "Jimara::Vector2ArithmeticInput"
 			},
 			"Node[4]": {
 				"Child Count[0]": 0,
-				"Type[0]": "Jimara::RaycastInput"
+				"Type[0]": "Jimara::FloatValueInput"
 			},
 			"Node[5]": {
 				"Child Count[0]": 0,
-				"Type[0]": "Jimara::FloatValueInput"
+				"Type[0]": "Jimara::RaycastInput"
 			},
 			"Node[6]": {
 				"Child Count[0]": 0,
-				"Type[0]": "Jimara::TransformFieldInput"
+				"Type[0]": "Jimara::FloatValueInput"
 			},
 			"Node[7]": {
+				"Child Count[0]": 0,
+				"Type[0]": "Jimara::TransformFieldInput"
+			},
+			"Node[8]": {
 				"Child Count[0]": 1,
 				"Node[0]": {
 					"Child Count[0]": 0,
