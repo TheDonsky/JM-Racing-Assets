@@ -1,0 +1,11 @@
+{
+	"Resource Data[0]": {
+		"Acceleration Structure Range[0]": 1.0,
+		"Bounce Transmittance Threshold[0]": 0.004999999888241291,
+		"Flags[0]": 11,
+		"Max Trace Depth[0]": 4,
+		"Roughness Threshold[0]": 1.0,
+		"Samples Per Pixel[0]": 1
+	},
+	"Resource Type[0]": "Jimara::RayTracedRenderer"
+}
